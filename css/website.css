@@ -7,7 +7,7 @@ body {
 }
 
 .site_header {
-    padding: 5px 100px;
+    padding: 15px 100px;
     height: 35px ;
 }
 
@@ -38,18 +38,20 @@ body {
      
 
 .brand_name { 
+    font-family: 'MangoBoardTtobaks';
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .top_menu ul {
     width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 60px;
     margin: 20px;
 }
 
 .top_menu a {
+    font-family: 'wanted';
     font-size: 18px;
     transition: color 0.2s;    
 }
@@ -82,13 +84,16 @@ body {
 }
 
 .hero_container .text h2 {
+    font-family: 'wanted';
     font-size: 28px;
+    font-weight: 700;
     margin-bottom: 16px;
     margin-left: -10px;
     margin-top: 30px;
 }
 
 .hero_container .text p {
+    font-family: 'wanted';
     font-size: 28px;
     color: #555;
     margin-left: -10px;
@@ -129,7 +134,7 @@ body {
     font-weight: 800;
     line-height: 1.1;
     letter-spacing: -0.3px;
-    color: #5f63ff;
+    color: #61E398;
     margin-bottom: 25px;
 }
 
@@ -160,14 +165,14 @@ body {
 }
 
 .project1_title li {
-    color: #5f63ff;
+    color: #61E398;
     text-decoration: underline;
     font-weight: 600;
     display: inline-block;
 }
 
 .project2_title li {
-    color: #4DA9FF;
+    color: #4DA9FF !important;
     text-decoration: underline;
     font-weight: 600;
     display: inline-block;
@@ -257,20 +262,23 @@ body {
 
 .footer_container .thankyou {
     display: inline-block;
+    font-family: 'wanted';
     font-size: 28px;              
-    font-weight: 700;
+    font-weight: 600;
     margin-bottom: 60px;
 }
 
 
 .hello strong {
     display: inline-block;
-     font-size: 18px;
+    font-family: 'MangoBoardTtobaks';
+    font-size: 18px;
+    font-weight: 600;
     margin-bottom: 16px;
 }
 
 .footer_container address {
-    font-style: normal;
+    font-family: 'MangoBoardTtobaks';
     font-size: 18px;
     font-weight: 600;
     margin: 8px 0 20px;
@@ -288,7 +296,9 @@ body {
 }
 
 .bottom_menu a {
+    font-family: 'wanted';
     font-weight: 600;
+    letter-spacing: 1px;
     text-decoration: underline;
 }
 
