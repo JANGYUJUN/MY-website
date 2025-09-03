@@ -8,41 +8,44 @@
   <link rel="stylesheet" href="./css/website.css">
   <link rel="stylesheet" href="./css/font.css">
   <link rel="stylesheet" href="./css/CONTACT_ME.css">
+  <script src="./js/scroll-animation.js"></script>
 </head>
 <body>
+  
+
     <header class="site_header">
     <div class="topmenu_container" role="navigation" aria-label="주요">
       <h1 class="logo">
         <a href="MY_website.html">
-          <img src="./images/iogo.png" alt="로고">
           <span class="brand_name">Jang Yu Jun</span>
         </a>
       </h1>
       <nav class="top_menu">
         <ul>
           <li><a href="MY_website.html">Home</a></li>
-          <li><a href="index.html#Product_design1">Product Design</a></li>
-          <li><a class="is-active" href="About_Me.html">About Me</a></li>
-          <li><a href="CONTACT_ME.html">CONTACT ME</a></li>
+          <li><a href="MY_website.html#Product_design1">Product Design</a></li>
+          <li><a href="About_Me.html">About Me</a></li>
+          <li><a class="is-active" href="CONTACT_ME.html">CONTACT ME</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
-    <section class="contact">
-      <div class="contact_container">
-        <!-- 왼쪽 상단 이미지 자리 -->
-        <div class="contact_badge" aria-hidden="true">이미지</div>
+    <main>
+    <section class="contact fade-in">
+      <div class="contact_container fade-in">
+        <img src="./images/contact_icon.svg" alt="contact_icon" class="contact_badge fade-in">
 
-        <h2 class="contact_title">연락하기</h2>
-        <p class="contact_lead">
-          저의 일정이 궁금하시거나, 저에 대해 더 알고 싶으시거나<br>
+        <h2 class="contact_title fade-in">연락하기</h2>
+        <p class="contact_lead fade-in">
+          저의 일정이나, 저에 대해 더 알고 싶으실 경우,<br>
           혹은 그냥 이야기를 나누고 싶으시다면 언제든지 연락주세요:)
         </p>
 
-        <form class="contact_form" action="#" method="post">
-          <div class="form_row">
+         
+        <form class="contact_form fade-in" action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="cb0a5a1c-7353-452b-9374-9b5c7dea6bce">
+          <div class="form_row fade-in">
             <div class="field">
               <label for="name">성함</label>
               <input type="text" id="name" name="name" required>
@@ -53,31 +56,31 @@
             </div>
           </div>
 
-          <div class="field">
+          <div class="field fade-in">
             <label for="message">메시지</label>
             <textarea id="message" name="message" rows="7" required></textarea>
           </div>
 
-          <button type="submit" class="btn_submit">보내기</button>
+          <button type="submit" class="btn_submit fade-in">보내기</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="site_footer">
-    <div class="footer_container">
-      <div class="hello">
+  <footer class="site_footer fade-in">
+    <div class="footer_container fade-in">
+      <div class="hello fade-in">
         <p class="thankyou">방문해주셔서 감사합니다 !</p>
         <p><strong>Let's connect</strong></p>
         <address>dbwns2002@naver.com</address>
       </div>
       <p><small>&copy; copyrights 2025 <strong>YUJUN</strong> All rights reserved.</small></p>
-      <nav class="bottom_menu">
+      <nav class="bottom_menu fade-in">
         <ul>
           <li><a href="MY_website.html">Home</a></li>
-          <li><a href="index.html#Product_design1">Product Design</a></li>
-          <li><a href="about.html">About Me</a></li>
-          <li><a href="CONTACT_ME.html">CONTACT ME</a></li>
+          <li><a href="MY_website.html#Product_design1">Product Design</a></li>
+          <li><a href="About_Me.html">About Me</a></li>
+          <li><a class="is-active" href="CONTACT_ME.html">CONTACT ME</a></li>
         </ul>
       </nav>
     </div>

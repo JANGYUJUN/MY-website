@@ -1,7 +1,35 @@
 @charset "utf-8";
 
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1), transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.about {
+    padding: 88px 20px;
+}
+
 .about_hero {
-    padding: 96px 24px 120px;
+    padding:20px 24px 120px;
 }
 
 .about_container {
@@ -20,9 +48,28 @@
 }
 
 .about_wrap {
+    display: grid;
+    grid-template-columns: 1fr 420px;
+    align-items: stretch;
+    gap: 80px;
+}
+
+.about_media {
     display: flex;
-    justify-content: space-between;
-    align-items: start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about_media .skills {
+    width: 100%;
+    margin-top: 28px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.about_media {
+    margin-top: -80px;
 }
 
 .about_text {
@@ -43,28 +90,55 @@
 }
 
 .about_photo {
-    margin: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
 }
 
 .about_photo img {
-    display: block;
-    width: 100%;
-    max-width: 350px;
-    height: 430px;
-    aspect-ratio: 1 / 1;
-    border-radius: 10%;
-    object-fit: cover;   
+    width: 320px;
+    height: auto;
+    border-radius: 24px;
+    object-fit: cover;
+    display: block; 
 }
 
 .top_menu a.is-active {
-   text-decoration: underline;
-   text-underline-offset: 6px;
    font-weight: 700;
+   color: #4b42ef;
+   text-decoration: none;
 }
 
+.skills {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.skills .skill img,
+.skills img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+}
+
+
 @media (max-width: 1024px) {
+    .about_wrap {
+        grid-template-columns: 1fr;
+        grid-template-areas: "media" "text";
+        gap: 48px;
+    }
+    .about_text {grid-area: text;}
+    .about_media {
+        grid-area: media;
+        align-items: center;}
     .about_title {font-size: 56px;}
-    .about_wrap {grid-template-columns: 1fr;}
+   
     .about_photo img {max-width: 360px; margin: 0 auto;}
 }
 
