@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+/* CONTACT PAGE */
+.contact {
+  padding: 80px 20px;
+}
+.contact_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding-top: 140px;   /* 배지 자리 공간 확보 */
+}
+
+.contact_badge {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 120px;
+  border-radius: 28px;
+  background: #e3e3e3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: 'wanted', system-ui, sans-serif;
+}
+
+.contact_title {
+  font-family: 'wanted';
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.contact_lead {
+  font-family: 'wanted';
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.contact_form .form_row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 28px;
+}
+
+.field label {
+  display: block;
+  font-family: 'wanted';
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 22px 24px;
+  border: none;
+  border-radius: 22px;
+  background: #ddd;
+  font-size: 18px;
+  outline: none;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 200px;
+}
+
+.btn_submit {
+  margin-top: 20px;
+  padding: 16px 26px;
+  border: none;
+  border-radius: 14px;
+  background: #4b42ef;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn_submit:hover {
+  filter: brightness(1.05);
+}
+
+@media (max-width: 960px) {
+  .contact_form .form_row { grid-template-columns: 1fr; }
+  .contact_badge { width: 140px; height: 96px; border-radius: 24px; }
+  .contact_container { padding-top: 120px; }
+}
