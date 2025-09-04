@@ -35,8 +35,7 @@ body {
 }
 
 .site_header {
-    padding: 15px 100px;
-    height: auto;
+    width:100%;max-width:1200px;margin:0 auto;
 }
 
 .logo {
